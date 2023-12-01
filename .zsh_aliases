@@ -1,0 +1,5 @@
+alias gitclean="git fetch && git remote prune origin && git branch | grep -v "main" | xargs git branch -D"
+alias gitbump="git commit --amend --no-edit && git push --force-with-lease"
+alias upgrade="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+alias android-studio="/usr/local/android-studio/bin/studio.sh"
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'

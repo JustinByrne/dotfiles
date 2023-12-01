@@ -100,6 +100,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gitclean="git fetch && git remote prune origin && git branch | grep -v "main" | xargs git branch -D"
-alias gitbump="git commit --amend --no-edit && git push --force-with-lease"
-
+source $HOME/.zsh_aliases
